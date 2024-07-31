@@ -1,0 +1,36 @@
+version: '3.9'
+services:
+
+  backend:
+    container_name: percent-backend
+    restart: always
+    build:
+      context: backend
+      dockerfile: Dockerfile
+    ports:
+      - 4000:3000
+    env_file:
+      - .env
+
+  frontend:
+    container_name: percent-frontend
+    restart: always
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+    ports:
+      - 5000:3000
+
+  my_bd:
+    container_name: postgres
+    image: postgres
+    restart: always
+    env_file:
+      - .env
+
+  adminer:
+    container_name: adminer
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8080
