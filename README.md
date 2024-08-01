@@ -1,3 +1,9 @@
-# Докеризация приложения ++
+# Докеризация приложения с помощью docker
 
-Перед тем как приступить к выполнению проектной работы разместите в репозитории исходный код фронтенд и бэкенд частей сервиса КупиПодариДай, реализованного вами ранее. 
+### IP: 51.250.43.16
+
+### Frontend: [testo.nomorepartiesco.ru](https://gift.nomorepartiesco.ru)
+
+### Backend: [api.testo.nomorepartiesco.ru](api.gift.nomorepartiesco.ru)
+
+
